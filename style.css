@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+nav {
+    background-color: rgb(0, 255, 255);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+nav ul {
+    background-color: rgb(0, 255, 255);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    left: 400px;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;   
+}
+
+.logo {
+    height: auto;
+    width: 30px;
+}
+
+.sobre {
+    background-color: #08AFE6;
+    border-radius: 30px;
+}
+
+.vagas {
+    background-color: #08AFE6;
+    border-radius: 30px;
+}
+
+.inscricao {
+    background-color: #08AFE6;
+    border-radius: 30px;
+}
+
+.contato {
+    background-color: #08AFE6;
+    border-radius: 30px;
+}
