@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1050;
+    z-index: 1000;
     background-color: #08afe6;
     color: #000000;
     font-weight: bold;
