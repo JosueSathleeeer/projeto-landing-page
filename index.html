@@ -64,9 +64,9 @@
                         Inscreva-se agora e garanta seu <strong>Kit de Aceleração de Carreira</strong>:
                         Entrevista avaliativa + Workshop de IA + Acesso à nossa plataforma exclusiva de vagas.
                     </p>
-                    <a href="#inscricao" class="btn btn-info btn-lg botao-principal">
+                    <button class="btn btn-info btn-lg botao-principal" data-bs-toggle="modal" data-bs-target="#modalFormulario">
                         MINHA ENTREVISTA AVALIATIVA
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -110,121 +110,45 @@
     </section>
 
     <!-- Depoimentos em video-->
-    
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="text-center mb-5">
-            <h2>Depoimentos de nossos candidatos</h2>
-            <p class="texto-claro">Modelo de prints/relatos que você pode trocar depois por depoimentos reais.</p>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <video class="video-depoimento-1" controls>
-                    <source src="SaveInsta.App - 3394678302902566811.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="carousel-item">
-                <video class="video-depoimento-2" controls>
-                    <source src="SaveInsta.App - 3390486679725726914.mp4" type="video/mp4">
-                </video>
-            </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>>
-    
-    <!-- <section id="depoimentos">
+    <section id="depoimentos" class="secao depoimentos">
         <div class="container">
             <div class="text-center mb-5">
+                <span class="tag-secao">Depoimentos</span>
                 <h2>Depoimentos de nossos candidatos</h2>
-                <p class="texto-claro">Modelo de prints/relatos que você pode trocar depois por depoimentos reais.</p>
+                <p class="texto-claro">Veja relatos de quem já participou da experiência Prisma Tech.</p>
             </div>
 
-            <div class="videos-depoimentos">
-                <div class="video-1">
-                    <div class="video-depoimento">
-                        <video class="video-depoimento-1" controls>
-                            <source src="SaveInsta.App - 3394678302902566811.mp4" type="video/mp4">
-                        </video>
+            <div id="carouselDepoimentos" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-interval="false">
+                <div class="depoimento-video mx-auto">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="video-depoimento" controls playsinline preload="metadata">
+                                <source src="SaveInsta.App - 3394678302902566811.mp4" type="video/mp4">
+                                Seu navegador não conseguiu carregar este vídeo.
+                            </video>
+                        </div>
+
+                        <div class="carousel-item">
+                            <video class="video-depoimento" controls playsinline preload="metadata">
+                                <source src="SaveInsta.App - 3390486679725726914.mp4" type="video/mp4">
+                                Seu navegador não conseguiu carregar este vídeo.
+                            </video>
+                        </div>
                     </div>
                 </div>
 
-                <div class="video-2">
-                    <div class="video-depoimento">
-                        <video class="video-depoimento-2" controls>
-                            <source src="SaveInsta.App - 3390486679725726914.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
 
-                </div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-    <!-- Formulário -->
-    <section id="inscricao" class="secao formulario">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <span class="tag-secao">Inscrição</span>
-                    <h2>Preencha para iniciar sua avaliação</h2>
-                    <p class="texto-claro">
-                        Depois do envio, nossa equipe entra em contato pelo WhatsApp para agendar sua entrevista avaliativa.
-                    </p>
-                </div>
-
-                <div class="col-lg-6">
-                    <form class="form-card">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="whatsapp" class="form-label">WhatsApp</label>
-                            <input type="tel" class="form-control" id="whatsapp" placeholder="(27) 99999-9999" required>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-7 mb-3">
-                                <label for="cidade" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="cidade" placeholder="Sua cidade" required>
-                            </div>
-
-                            <div class="col-md-5 mb-3">
-                                <label for="idade" class="form-label">Idade</label>
-                                <input type="number" class="form-control" id="idade" placeholder="Sua idade" required>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="experiencia" class="form-label">Já teve sua primeira experiência profissional?</label>
-                            <select class="form-select" id="experiencia" required>
-                                <option value="" selected disabled>Selecione</option>
-                                <option>Sim</option>
-                                <option>Não</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-info w-100 botao-principal">
-                            Enviar inscrição
-                        </button>
-
-                        <small class="aviso-form">Ao enviar, você demonstra interesse em receber contato da equipe Prisma Tech.</small>
-                    </form>
-                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </div>
     </section>
-
 
     <!-- Modal Bootstrap com vídeo MP4 -->
     <div class="modal fade" id="modalVideo" tabindex="-1" aria-hidden="true">
@@ -244,6 +168,68 @@
         </div>
     </div>
 
+<!-- Formulario -->
+    <div class="modal fade" id="modalFormulario" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content modal-video">
+                <section id="inscricao" class="secao formulario">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <span class="tag-secao">Inscrição</span>
+                                <h2>Preencha para iniciar sua avaliação</h2>
+                                <p class="texto-claro">
+                                    Depois do envio, nossa equipe entra em contato pelo WhatsApp para agendar sua entrevista avaliativa.
+                                </p>
+                            </div>
+            
+                            <div class="col-lg-6">
+                                <form class="form-card">
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                                    </div>
+            
+                                    <div class="mb-3">
+                                        <label for="whatsapp" class="form-label">WhatsApp</label>
+                                        <input type="tel" class="form-control" id="whatsapp" placeholder="(27) 99999-9999" required>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-md-7 mb-3">
+                                            <label for="cidade" class="form-label">Cidade</label>
+                                            <input type="text" class="form-control" id="cidade" placeholder="Sua cidade" required>
+                                        </div>
+            
+                                        <div class="col-md-5 mb-3">
+                                            <label for="idade" class="form-label">Idade</label>
+                                            <input type="number" class="form-control" id="idade" placeholder="Sua idade" required>
+                                        </div>
+                                    </div>
+            
+                                    <div class="mb-4">
+                                        <label for="experiencia" class="form-label">Já teve sua primeira experiência profissional?</label>
+                                        <select class="form-select" id="experiencia" required>
+                                            <option value="" selected disabled>Selecione</option>
+                                            <option>Sim</option>
+                                            <option>Não</option>
+                                        </select>
+                                    </div>
+            
+                                    <button type="submit" class="btn btn-info w-100 botao-principal">
+                                        Enviar inscrição
+                                    </button>
+            
+                                    <small class="aviso-form">Ao enviar, você demonstra interesse em receber contato da equipe Prisma Tech.</small>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
     <footer class="rodape text-center">
         <p>© 2026 Prisma Tech. Todos os direitos reservados.</p>
     </footer>
@@ -251,5 +237,39 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        const areaDepoimentos = document.querySelector('#carouselDepoimentos');
+
+        if (areaDepoimentos) {
+            const carrosselDepoimentos = new bootstrap.Carousel(areaDepoimentos, {
+                interval: false,
+                ride: false,
+                pause: false,
+                wrap: true
+            });
+
+            const videosDepoimentos = areaDepoimentos.querySelectorAll('.video-depoimento');
+
+            videosDepoimentos.forEach((video) => {
+                video.addEventListener('ended', () => {
+                    carrosselDepoimentos.next();
+                });
+            });
+
+            areaDepoimentos.addEventListener('slide.bs.carousel', () => {
+                videosDepoimentos.forEach((video) => {
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            });
+
+            areaDepoimentos.addEventListener('slid.bs.carousel', () => {
+                const videoAtual = areaDepoimentos.querySelector('.carousel-item.active .video-depoimento');
+                if (videoAtual) {
+                    videoAtual.play().catch(() => {});
+                }
+            });
+        }
+    </script>
 </body>
 </html>
